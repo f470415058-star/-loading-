@@ -1,8 +1,11 @@
 {
   "buildCommand": "npm run build && rm -rf public && mkdir -p public/landing-page public/dist && cp -r examples/landing-page/* public/landing-page/ && cp -r dist/* public/dist/",
   "outputDirectory": "public",
+  "redirects": [
+    { "source": "/", "destination": "/landing-page/", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/", "destination": "/landing-page" }
+    { "source": "/landing-page", "destination": "/landing-page/" }
   ]
 }
 
