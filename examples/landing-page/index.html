@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Landing · Anime.js Demos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="hero-bg">
+    <div id="creature-wrapper">
+      <div id="creature"></div>
+    </div>
+    <div class="hero-glow"></div>
+  </div>
+
+  <header class="container hero">
+    <div class="hero-text">
+      <p class="pill">粒子视频 · 极速生成</p>
+      <h1>为产品打造沉浸式粒子 Loading</h1>
+      <p class="subtitle">上传 Logo 或标语，快速生成可嵌入的粒子视频，占位时也能传递品牌感。</p>
+      <div class="cta-group">
+        <button class="btn primary">生成我的 Loading</button>
+        <button class="btn ghost">查看示例</button>
+      </div>
+      <div class="hero-metrics">
+        <span><strong>15K+</strong> 已生成粒子视频</span>
+        <span><strong>99.9%</strong> CDN 可用率</span>
+        <span><strong>38%</strong> 留存提升</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card__title">实时粒子预览</div>
+      <div class="hero-card__body">
+        <div class="cursor-demo">
+          <div class="cursor-dot"></div>
+          <div class="cursor-trail"></div>
+        </div>
+        <p class="hint">指针路径即粒子轨迹，展示 Loading 互动效果。</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container features">
+      <div class="section-header">
+        <p class="pill">功能亮点</p>
+        <h2>轻量动画，极速展示</h2>
+        <p class="subtitle">粒子视频体积可控，LCP 友好，嵌入加载页不拖慢体验。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="dot"></div>
+          <h3>粒子矩阵背景</h3>
+          <p>自定义品牌色与透明度，柔和铺底，作为 Loading 动画的主舞台。</p>
+        </article>
+        <article class="feature-card">
+          <div class="dot"></div>
+          <h3>多场景模板</h3>
+          <p>桌面与移动端双模板，适配嵌入式 Loading 或独立等候页。</p>
+        </article>
+        <article class="feature-card">
+          <div class="dot"></div>
+          <h3>Logo 线条勾勒</h3>
+          <p>先线条描边再粒子填充，让品牌 Logo 在等待中被记住。</p>
+        </article>
+        <article class="feature-card">
+          <div class="dot"></div>
+          <h3>光标/触摸跟随</h3>
+          <p>Loading 期间保持轻交互，顺滑跟随，降低等待焦虑和跳失。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container stats">
+      <div class="stats-text">
+        <p class="pill">增长曲线</p>
+        <h2>缩短等待但不失体验</h2>
+        <p class="subtitle">用短动画覆盖加载空窗，保证品牌露出与沉浸感。</p>
+        <ul class="stats-list">
+          <li><strong>-38%</strong> 跳出率</li>
+          <li><strong>92%</strong> 用户更愿等待</li>
+          <li><strong>15s</strong> 无限循环不卡顿</li>
+        </ul>
+      </div>
+      <div class="stats-graph">
+        <svg viewBox="0 0 520 280" role="img" aria-label="增长曲线">
+          <defs>
+            <linearGradient id="lineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#4c6fff" stop-opacity="0.9"></stop>
+              <stop offset="100%" stop-color="#a3b8ff" stop-opacity="0.4"></stop>
+            </linearGradient>
+          </defs>
+          <path id="graph-line" d="M20 220 L120 180 L200 190 L280 130 L360 150 L440 90 L500 110" stroke="url(#lineGradient)" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path id="graph-shadow" d="M20 220 L120 180 L200 190 L280 130 L360 150 L440 90 L500 110 L500 260 L20 260 Z" fill="url(#lineGradient)" opacity="0.18"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="container cta">
+      <div class="cta-box">
+        <div>
+          <p class="pill">立即试用</p>
+          <h2>把 Loading 变成品牌舞台</h2>
+          <p class="subtitle">一键生成粒子视频，品牌色与文案可配，随处嵌入。</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn primary">生成粒子视频</button>
+          <button class="btn ghost">联系客服</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
+
